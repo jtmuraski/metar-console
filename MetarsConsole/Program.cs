@@ -31,6 +31,8 @@ namespace MetarsConsole
                 response = (Response)xmlSerializer.Deserialize(reader);
             }
 
+
+
             foreach(var metar in response.Data.METAR)
             {
                 Console.WriteLine(metar.RawText);

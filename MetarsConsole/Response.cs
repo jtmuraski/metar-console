@@ -134,7 +134,7 @@ namespace MetarsConsole
         public decimal SeaLevelPressureMb { get; set; }
 
         [XmlElement(ElementName = "quality_control_flags")]
-        public QualityControlFlags QualityControlFlags { get; set; }
+        public List<QualityControlFlags> QualityControlFlags { get; set; }
     }
 
     [XmlRoot(ElementName = "data")]
