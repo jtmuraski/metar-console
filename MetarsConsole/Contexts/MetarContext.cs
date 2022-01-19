@@ -18,5 +18,11 @@ namespace MetarsConsole.Contexts
             optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=MetarData;Trusted_Connection=True;");
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<MetarsConsole.Models.Metar>()
+                .HasIndex(met => met.RawText)
+                .IsUnique();
+        }
     }
 }
