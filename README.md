@@ -1,7 +1,7 @@
 # Metar API Consumer
 
 ## Introduction
-This console based application is a simple applicatin designed to pull recent **Met**eorlogical **A**erodrome **R**eports (METARS) from the United States National Oceanic and Atmosphere Administration (NOAA) open data API. After the data is pulled from NOAA, the application then updates a local SqlLite database.
+This console based application is a simple applicatin designed to pull recent **Met**eorlogical **A**erodrome **R**eports (METARS) from the United States National Oceanic and Atmosphere Administration (NOAA) open data API. After the data is pulled from NOAA, the application then updates a local SqlLite database. I created this simple project to learn how to consume 3rd party API's and deserialize the data.
 
 ## What is a METAR?
 A METAR is a aviation weather report that pilots receive before, during and after a flight. It is transmitted and recieved as a simple line of text, but that simple line of text contains a lot of information. If you are curious on how to read a METAR, check out this article: https://pilotinstitute.com/metar-and-taf-reports/
